@@ -1465,13 +1465,13 @@ $mylist.html(top_100_li);
         same function. Instead of binding an event listener function to many nodes—very inefficient—you can
         bind it once to their parent, and have it figure out which node triggered the event.</p>
 <pre class="bad">
-$('#myList li).bind('click', function(){
+$('#myList li').bind('click', function(){
     $(this).addClass('clicked');
     // do stuff
 });
 </pre>
 <pre class="good">
-$('#myList).bind('click', function(e){
+$('#myList').bind('click', function(e){
     var target = e.target, // e.target grabs the node that triggered the event.
     $target = $(target);  // wraps the node in a jQuery object
     if (target.nodeName === 'li') {
