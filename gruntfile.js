@@ -1,7 +1,6 @@
 module.exports = function (grunt) {
 
     var data = require('./package.json'),
-        cerberus = require('./cerberus'),
         server = {
             build:8081,
             release:8082
