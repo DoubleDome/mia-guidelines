@@ -2,8 +2,8 @@ module.exports = function (grunt) {
 
     var data = require('./package.json'),
         server = {
-            build:8081,
-            release:8082
+            build:3031,
+            release:3032
         },
         lessOptions = {
             compress:false
